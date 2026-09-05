@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Dyn.com Dynamic DNS",
+        "description": "Connect your Dyn.com Dynamic DNS hostname to Home Assistant so it is automatically updated with your current external IP address.",
+        "data": {
+          "hostname": "Hostname",
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate Dyn.com",
+        "description": "Dyn.com rejected the stored credentials. Please enter a valid username and password.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password.",
+      "cannot_connect": "Failed to connect to Dyn.com.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This hostname is already configured.",
+      "reauth_successful": "Reauthentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Dyn.com options",
+        "data": {
+          "update_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "dyncom_status": {
+        "name": "Status"
+      }
+    }
+  }
+}

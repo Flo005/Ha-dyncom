@@ -1,0 +1,12 @@
+{
+  "domain": "dyncom",
+  "name": "Dyn.com Dynamic DNS",
+  "codeowners": ["@flo005"],
+  "config_flow": true,
+  "documentation": "https://github.com/flo005/ha-dyncom",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/flo005/ha-dyncom/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
